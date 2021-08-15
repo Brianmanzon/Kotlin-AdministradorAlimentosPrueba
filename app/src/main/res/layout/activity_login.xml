@@ -1,0 +1,304 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/fondo"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/outlinedTextField1"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="nombre de usuario"
+            app:helperTextEnabled="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/i_t_usuario"
+                android:layout_width="190dp"
+                android:layout_height="64dp"
+                android:drawableLeft="@drawable/baseline_face_24"
+                android:drawablePadding="10dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/outlinedTextField2"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="contraseña"
+            app:helperTextEnabled="true"
+            app:passwordToggleEnabled="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/i_t_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_info_20"
+                android:inputType="textPassword"
+                android:drawablePadding="10dp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+<Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/i_b_ingresar"
+            style="?attr/borderlessButtonStyle"
+            android:layout_width="201dp"
+            android:layout_height="wrap_content"
+            android:text="ingresar" />
+
+        <Button
+            android:id="@+id/i_b_registrarse"
+            style="?attr/borderlessButtonStyle"
+            android:layout_width="207dp"
+            android:layout_height="wrap_content"
+            android:text="Registrarse" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/outlinedTextField3"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="nombre"
+            app:helperTextEnabled="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/r_t_nombre"
+                android:layout_width="187dp"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_face_24"
+                android:drawablePadding="10dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/outlinedTextField4"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="apellido"
+            app:helperTextEnabled="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/r_t_apellido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_face_24"
+                android:drawablePadding="10dp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+
+        <Spinner
+            android:id="@+id/r_s_doc"
+            android:layout_width="108dp"
+            android:layout_height="54dp"
+            android:layout_weight="0"
+            android:background="@drawable/spinner_background"
+
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/outlinedTextField"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="número"
+            app:helperTextEnabled="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/r_t_doc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_face_24"
+                android:drawablePadding="10dp"
+                android:inputType="number"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+        <Spinner
+            android:id="@+id/r_s_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="54dp"
+            android:layout_weight="0"
+            android:background="@drawable/spinner_background"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/outlinedTextField5"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="fecha de nacimiento"
+            app:helperTextEnabled="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/r_t_nac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_edit_calendar_20"
+                android:drawablePadding="10dp"
+                android:inputType="date"
+                android:focusableInTouchMode="false"
+                android:focusable="false"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp">>
+        <Spinner
+            android:id="@+id/r_s_tratamiento"
+            android:layout_width="108dp"
+            android:layout_height="54dp"
+            android:layout_weight="0"
+            android:background="@drawable/spinner_background"
+
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/outlinedTextField6"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="localidad"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/r_t_localidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_room_24"
+                android:drawablePadding="10dp"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/outlinedTextField8"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="usuario"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/r_t_usuario"
+                android:layout_width="187dp"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_face_24"
+                android:drawablePadding="10dp"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/outlinedTextField9"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="contraseña"
+            app:helperTextEnabled="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            app:passwordToggleEnabled="true">>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/r_t_contraseña"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_info_20"
+                android:drawablePadding="10dp"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+    <Button
+        android:id="@+id/r_b_registrar"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrarse" />
+
+</LinearLayout>
+
+
+</LinearLayout>

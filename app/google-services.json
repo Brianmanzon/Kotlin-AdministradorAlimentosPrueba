@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1031313220478",
+    "firebase_url": "https://saludabletpfinal-default-rtdb.firebaseio.com",
+    "project_id": "saludabletpfinal",
+    "storage_bucket": "saludabletpfinal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1031313220478:android:e08584f1ed9a2209e4892f",
+        "android_client_info": {
+          "package_name": "edu.labneo.saludable_tpfinal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1031313220478-r4d96knhh8nsr27i1oa1lvu7jvikhdf4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFNU_Rw8yZRgJw-VO9dkL10f3ohdl2gj0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1031313220478-r4d96knhh8nsr27i1oa1lvu7jvikhdf4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
